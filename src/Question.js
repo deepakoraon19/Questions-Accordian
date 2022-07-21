@@ -8,8 +8,9 @@ const Question = ({ques,ans}) => {
   return <article className='question'>
     <header>
       <h4>{ques}</h4>
-      {show?<><AiOutlinePlus onClick={()=>setShow(false)} /> <span>{ans}</span></>:<AiOutlineMinus onClick={()=>setShow(true)} />}
+      {show?<><AiOutlinePlus onClick={()=>setShow(false)} /> </>:<AiOutlineMinus onClick={()=>setShow(true)} />}
     </header>
+    {show?<><span>{ans}</span></>:<></>}
   </article>;
 };
 

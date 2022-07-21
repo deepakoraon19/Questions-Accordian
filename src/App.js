@@ -6,10 +6,10 @@ function App() {
   return (
     <main>
       <div className="container">
-        <h3>Question and Answers</h3>
+        <h3>Question and Answers about login</h3>
         <section className="info">
         {data.map((q) => {
-          return <Question ques={q.title} ans={q.info} key={q.id}></Question>;
+          return <SingleQuestion ques={q.title} ans={q.info} key={q.id}></SingleQuestion>;
         })}
         </section>
       </div>
